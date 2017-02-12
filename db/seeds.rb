@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do |d|
+FreelanceDocument.create!(
+    title: "Document #{d}",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    file_url: "https://docs.google.com/document/d/1vndRR-k79bE6s4CVljKX8uzWg0PdqkMfPV_jsuRSuXQ/edit?usp=sharing",
+    image_url: 'https://images.stackcommerce.com/assets/productshot1-image/19059/fc1f5cad782bbe4354298a8f0b02b5f4016e7a67_main_hero_image.jpg'
+)
+end
